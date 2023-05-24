@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador-Alura-ONE</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/logo.svg" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="contenedor">
+            <img class="logo" src="img/logo.svg" alt="logo alura">
+            <h1 class="titulo_logo">Encriptador Alura+</h1>
+        </div>
+
+    </header>
+
+    <main>
+        <div class="contenedor">
+            <div class="encriptador">
+                <form class="encriptador_form">
+                    <div class="texto_en_area">
+                        <textarea name="texto" id="texto" placeholder="Ingrese el texto aqui 👈"></textarea>
+                        <div class="texto_info">
+                            <div class="info">
+                                <img src="img/exclamacion.svg">
+                                <p id="advertencia">Solo letras minúsculas y sin acentos.</p>
+                            </div> 
+
+                        </div>
+
+                        <div class="btn">
+                            <button id="encri" class="btn_encriptar" type="button"><img src="img/cerrar-con-llave.png">
+                                Encriptar</button>
+                            <button id="desencri" class="btn_desencriptar" type="button"><img
+                                    src="img/candadoAbierto.png"> Desencriptar</button>
+                        </div>
+                    </div>
+                </form>
+
+                <div class="resultado">
+
+                    <div class="contenedor_resultado">
+                        <div class="contenido_no_resuelto" id="noResuelto">
+                            <div class="imagen_resultado">
+                                <img src="img/muneco.svg" alt="imagen de muñeco">
+                            </div>
+                            <p>Ningún mensaje fue encontrado</p>
+                            <p class="int">Ingresa el texto que desees encriptar o desencriptar.</p>
+                        </div>
+
+                        <div class="contenido_resuelto" id="resuelto">
+                            <textarea name="texto_resultado" id="textoResultado" disabled></textarea>
+                            <button id="copiar" type="button"><img src="img/copiar.png"> Copiar</button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="pie-pagina">
+        <p class="copyright">©  Copyright  |
+            Oracle+AluraLatam-2023.</p>
+
+                <a
+                href="https://www.linkedin.com/in/ra%C3%BAl-jimenez-1469a7207/"
+                target="_blank"
+                rel="noopener noreferrer"><img src="img/linkedin.png"
+                    class="pgn" alt="icono Linkedin"
+                    /></a>
+            <a
+                href="https://github.com/Guerrero16"
+                target="_blank"
+                rel="noopener noreferrer"><img src="img/github.png"
+                    class="pgn" alt="icono GitHub"
+                    /></a>
+            <a
+                href="https://www.facebook.com/raul.jimeneztellez"
+                target="_blank"
+                rel="noopener noreferrer"><img src="img/facebook.png"
+                    class="pgn" alt="icono Facebook"
+                    /></a>
+            <a
+                href="https://codepen.io/Ra-l-Jimenez-Tellez/pen/zYmMzXx"
+                target="_blank"
+                rel="noopener noreferrer"><img src="img/codepen.png"
+                    class="pgn" alt="icono CodePen"
+                    /></a>
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
